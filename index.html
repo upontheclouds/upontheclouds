@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+
+    <a href="#home" class="brand">
+      up on the clouds
+    </a>
+
+    <div class="nav-links">
+      <a href="#home">home</a>
+      <a href="#game">play</a>
+      <a href="#daily-dose">daily dose</a>
+      <a href="#your-sky">your sky</a>
+      <a href="#about">about</a>
+    </div>
+
+    <div class="cloud-total">
+      ☁️ <span id="siteCloudCount">0</span>
+    </div>
+
+  </nav>
+
+
+  <!-- HOME -->
+
+  <main class="hero" id="home">
+
+    <h1>up on the clouds</h1>
+
+    <p class="tagline">
+      all smiles.
+    </p>
+
+    <p class="intro">
+      little games. little joys.<br>
+      a little something for your day.
+    </p>
+
+    <button id="playButton">
+      play today ☁️
+    </button>
+
+  </main>
+
+
+  <!-- GAME -->
+
+  <section class="game" id="game">
+
+    <div class="cloud-count">
+      ☁️ <span id="cloudCount">0</span> clouds collected
+    </div>
+
+    <p class="game-label">
+      today's cloud
+    </p>
+
+    <h2>
+      cloud memory
+    </h2>
+
+    <p class="game-instructions">
+      watch the sequence.<br>
+      remember it. recreate it.
+    </p>
+
+    <div id="sequence"></div>
+
+    <div id="choices"></div>
+
+    <p id="message"></p>
+
+    <button id="nextButton">
+      next cloud ☁️
+    </button>
+
+  </section>
+
+
+  <!-- DAILY DOSE -->
+
+  <section class="daily-dose" id="daily-dose">
+
+    <p class="game-label">
+      something for today
+    </p>
+
+    <h2>
+      daily dose
+    </h2>
+
+    <p class="daily-intro">
+      a little something to brighten your day.
+    </p>
+
+
+    <!-- WORD OF THE DAY -->
+
+    <div class="dose-item">
+
+      <p class="daily-label">
+        word of the day
+      </p>
+
+      <h3>
+        sonder
+      </h3>
+
+      <p>
+        the realization that everyone around you
+        has a life just as vivid and complicated as your own.
+      </p>
+
+    </div>
+
+
+    <!-- THOUGHT OF THE DAY -->
+
+    <div class="dose-item">
+
+      <p class="daily-label">
+        thought of the day
+      </p>
+
+      <p class="daily-thought">
+        you don't have to make today extraordinary.
+        sometimes a good ordinary day is enough.
+      </p>
+
+    </div>
+
+
+    <!-- SONG OF THE DAY -->
+
+    <div class="dose-item daily-song">
+
+      <p class="daily-label">
+        song of the day
+      </p>
+
+      <h3>
+        today's soundtrack 🎧
+      </h3>
+
+      <iframe
+        style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/3gyJbNBTRVRdZDA1yO3clm?utm_source=generator"
+        width="100%"
+        height="152"
+        frameBorder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+      </iframe>
+
+    </div>
+
+
+    <!-- TINY JOY -->
+
+    <div class="dose-item">
+
+      <p class="daily-label">
+        tiny joy
+      </p>
+
+      <h3>
+        look up ☁️
+      </h3>
+
+      <p>
+        take a second to look at the sky today.
+        notice one thing you wouldn't normally stop to see.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- YOUR SKY -->
+
+  <section class="simple-section" id="your-sky">
+
+    <p class="game-label">
+      your collection
+    </p>
+
+    <h2>
+      your sky
+    </h2>
+
+    <p>
+      every little win becomes part of your sky.
+    </p>
+
+    <div class="sky-count">
+      ☁️ <span id="skyCloudCount">0</span> clouds
+    </div>
+
+    <div id="skyDisplay"></div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+
+  <section class="simple-section" id="about">
+
+    <p class="game-label">
+      why we're here
+    </p>
+
+    <h2>
+      about
+    </h2>
+
+    <p>
+      up on the clouds started with a simple idea:<br>
+      what if the internet had a little more room for joy?
+    </p>
+
+    <p>
+      we make tiny games and happy little moments<br>
+      designed to give you something positive to come back to.
+    </p>
+
+    <p>
+      but there's something bigger behind it, too.
+    </p>
+
+    <p>
+      we're working toward supporting teen mental health<br>
+      and creating a space where young people can<br>
+      take a breath, reset, and remember that they're not alone.
+    </p>
+
+    <p>
+      one cloud at a time. ☁️
+    </p>
+
+  </section>
+
+
+  <!-- POSITIVITY POPUP -->
+
+  <div id="quoteOverlay">
+
+    <div id="quotePopup">
+
+      <button id="closeQuote">
+        ×
+      </button>
+
+      <p class="quote-label">
+        a little reminder ☁️
+      </p>
+
+      <p id="quoteText"></p>
+
+    </div>
+
+  </div>
+
+
+  <!-- SUPPORT FOOTER -->
+
+  <footer class="footer">
+
+    <div class="footer-support">
+
+      <p class="game-label">
+        you don't have to do it alone
+      </p>
+
+      <h2>
+        need a little more support?
+      </h2>
+
+      <p>
+        up on the clouds is here for little moments of joy,<br>
+        but sometimes you need a little more support, too.
+      </p>
+
+      <div class="support-links">
+
+        <a href="tel:988" class="support-card">
+          <strong>
+            988 Suicide & Crisis Lifeline
+          </strong>
+
+          <span>
+            call or text 988 · 24/7
+          </span>
+        </a>
+
+        <a href="sms:741741?&body=HOME" class="support-card">
+          <strong>
+            Crisis Text Line
+          </strong>
+
+          <span>
+            text HOME to 741741 · 24/7
+          </span>
+        </a>
+
+      </div>
+
+      <p class="footer-note">
+        If you or someone else is in immediate danger,
+        call 911 or go to the nearest emergency department.
+      </p>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>
+        up on the clouds ☁️
+      </span>
+
+      <span>
+        all smiles.
+      </span>
+
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
