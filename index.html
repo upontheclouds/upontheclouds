@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- IMPORTANT FOR PHONE SIZING -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>up on the clouds</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+
+  <nav class="navbar">
+
+    <a href="#home" class="brand">
+      up on the clouds
+    </a>
+
+    <div class="nav-links">
+      <a href="#home">home</a>
+      <a href="#game">play</a>
+      <a href="#daily-dose">daily dose</a>
+      <a href="#your-sky">your sky</a>
+      <a href="#about">about</a>
+    </div>
+
+    <div class="cloud-total">
+      ☁️ <span id="siteCloudCount">0</span>
+    </div>
+
+  </nav>
+
+
+  <!-- HOME -->
+
+  <section class="hero" id="home">
+
+    <h1>
+      up on the clouds
+    </h1>
+
+    <p class="tagline">
+      all smiles.
+    </p>
+
+    <p class="intro">
+      a little place to pause, play, and find<br>
+      something good in the middle of your day.
+    </p>
+
+    <button id="playButton">
+      play today ☁️
+    </button>
+
+  </section>
+
+
+  <!-- CLOUD MEMORY -->
+
+  <section class="game" id="game">
+
+    <p class="cloud-count">
+      you've collected
+      <span id="cloudCount">0</span>
+      clouds
+    </p>
+
+    <p class="game-label">
+      today's little game
+    </p>
+
+    <h2>
+      cloud memory
+    </h2>
+
+    <p class="game-instructions">
+      remember the sequence. then tap it back.
+    </p>
+
+    <div id="sequence"></div>
+
+    <p id="message">
+      press play to begin.
+    </p>
+
+    <div id="choices"></div>
+
+    <button id="nextButton">
+      another round ☁️
+    </button>
+
+  </section>
+
+
+  <!-- BETWEEN THE LINES -->
+
+  <section class="word-game" id="between-the-lines">
+
+    <p class="game-label">
+      another little game
+    </p>
+
+    <h2>
+      between the lines
+    </h2>
+
+    <p class="word-intro">
+      read the clues. find the word.
+    </p>
+
+    <button id="startWordGame">
+      start playing
+    </button>
+
+    <div class="word-card">
+
+      <p class="daily-label">
+        what am i?
+      </p>
+
+      <div id="clueNumber">
+        clue 1 of 3
+      </div>
+
+      <p id="clueText">
+        press start to begin.
+      </p>
+
+      <div class="guess-area">
+
+        <input
+          type="text"
+          id="guessInput"
+          placeholder="type your guess..."
+          autocomplete="off"
+        >
+
+        <button id="guessButton">
+          guess
+        </button>
+
+      </div>
+
+      <div class="word-actions">
+
+        <button id="nextClueButton">
+          another clue
+        </button>
+
+        <button id="skipButton">
+          skip
+        </button>
+
+      </div>
+
+      <p id="wordMessage"></p>
+
+    </div>
+
+  </section>
+
+
+  <!-- BETWEEN THE LINES POPUP -->
+
+  <div id="wordOverlay">
+
+    <div id="wordPopup">
+
+      <button id="closeWord">
+        ×
+      </button>
+
+      <p class="quote-label">
+        you got it ☁️
+      </p>
+
+      <h3 id="revealedWord">
+        camera
+      </h3>
+
+      <p id="wordThought">
+        capture the moment.
+      </p>
+
+      <button id="nextWordButton">
+        next word
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- DAILY DOSE -->
+
+  <section class="daily-dose" id="daily-dose">
+
+    <p class="game-label">
+      a little something for today
+    </p>
+
+    <h2>
+      daily dose
+    </h2>
+
+    <p class="daily-intro">
+      little things worth noticing.
+    </p>
+
+
+    <!-- WORD -->
+
+    <div class="dose-item">
+
+      <p class="daily-label">
+        word of the day
+      </p>
+
+      <h3>
+        sonder
+      </h3>
+
+      <p>
+        the realization that everyone around you
+        has a life as vivid and complicated as your own.
+      </p>
+
+    </div>
+
+
+    <!-- THOUGHT -->
+
+    <div class="dose-item">
+
+      <p class="daily-label">
+        thought of the day
+      </p>
+
+      <p class="daily-thought">
+        you don't have to make today extraordinary.
+        sometimes a good ordinary day is enough.
+      </p>
+
+    </div>
+
+
+    <!-- SONG -->
+
+    <div class="dose-item daily-song">
+
+      <p class="daily-label">
+        song of the day
+      </p>
+
+      <h3>
+        today's soundtrack
+      </h3>
+
+      <iframe
+        style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/3gyJbNBTRVRdZDA1yO3clm?utm_source=generator"
+        width="100%"
+        height="152"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+      </iframe>
+
+    </div>
+
+
+    <!-- TINY JOY -->
+
+    <div class="dose-item">
+
+      <p class="daily-label">
+        tiny joy
+      </p>
+
+      <h3>
+        look up
+      </h3>
+
+      <p>
+        take a second to look at the sky.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- YOUR SKY -->
+
+  <section class="simple-section" id="your-sky">
+
+    <p class="game-label">
+      everything you've collected
+    </p>
+
+    <h2>
+      your sky
+    </h2>
+
+    <p>
+      every little win leaves a cloud behind.
+    </p>
+
+    <div class="sky-count">
+
+      ☁️
+      <span id="skyCloudCount">0</span>
+      clouds collected
+
+    </div>
+
+    <div id="skyDisplay"></div>
+
+  </section>
+
+
+  <!-- POSITIVITY POPUP -->
+
+  <div id="quoteOverlay">
+
+    <div id="quotePopup">
+
+      <button id="closeQuote">
+        ×
+      </button>
+
+      <p class="quote-label">
+        a little reminder
+      </p>
+
+      <p id="quoteText">
+        you don't have to have everything figured out today.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- ABOUT -->
+
+  <section class="simple-section" id="about">
+
+    <p class="game-label">
+      why we're here
+    </p>
+
+    <h2>
+      about
+    </h2>
+
+    <p style="max-width: 600px; line-height: 1.8; color: #81776d;">
+      up on the clouds is a little corner of the internet
+      made for taking a breath, playing something fun,
+      noticing small things, and remembering that
+      not every day has to be extraordinary to be a good one.
+    </p>
+
+    <p style="max-width: 600px; line-height: 1.8; color: #81776d;">
+      we're building this space with a bigger purpose too:
+      making conversations around young people's mental
+      health feel a little more open, hopeful, and human.
+    </p>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    <div class="footer-support">
+
+      <p class="game-label">
+        if you need a little more support
+      </p>
+
+      <h2>
+        you don't have to handle everything alone.
+      </h2>
+
+      <p>
+        if you're going through something difficult,
+        reaching out to someone you trust can be a good
+        place to start.
+      </p>
+
+      <div class="support-links">
+
+        <a
+          class="support-card"
+          href="https://988lifeline.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <strong>
+            988 Suicide & Crisis Lifeline
+          </strong>
+
+          <span>
+            call or text 988 for free, confidential crisis support.
+          </span>
+
+        </a>
+
+
+        <a
+          class="support-card"
+          href="https://www.crisistextline.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <strong>
+            Crisis Text Line
+          </strong>
+
+          <span>
+            text HOME to 741741 to connect with a trained crisis counselor.
+          </span>
+
+        </a>
+
+      </div>
+
+      <p class="footer-note">
+        up on the clouds is not a crisis service.
+        if you are in immediate danger, contact emergency services
+        or reach out to a trusted adult.
+      </p>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>
+        up on the clouds ☁️
+      </span>
+
+      <span>
+        all smiles.
+      </span>
+
+    </div>
+
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script src="script.js"></script>
+
+</body>
+</html>
